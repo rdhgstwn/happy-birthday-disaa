@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Disaa 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Theme toggle button -->
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="floating-hearts"></div>
+        <div class="sparkles"></div>
+        <div class="bg-circles">
+            <div class="bg-circle"></div>
+            <div class="bg-circle"></div>
+            <div class="bg-circle"></div>
+            <div class="bg-circle"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="birthday-icon fade-in">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <h1 class="title fade-in">Happy Birthday Disaa 💕</h1>
+            <p class="subtitle fade-in">Semoga … (ucapin sendiri ya). Aamiin.</p>
+            <div class="decorative-line fade-in"></div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container">
+            <!-- Birthday message -->
+            <section class="message-section">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">
+                        <i class="fas fa-envelope-open-heart"></i>
+                        Pesan Singkat — Just for You
+                    </h2>
+                </div>
+                <div class="message-content">
+                    <div class="message-card fade-in">
+                        <p>Selamat ulang tahun🥳💖 Akhirnya nambah umur juga ya, itu artinya kamu makin dekat sama masa di mana tidur siang jadi kebutuhan, bukan pilihan 😆. 
+                            Tapi serius deh, di hari spesial kamu ini, aku pengin ngucapin makasih karena sipasipaga sipatiti sipagaga sipasipa</p>
+                    </div>
+                    <div class="message-card fade-in">
+                        <p>Semoga di umur baru ini, kamu makin kuat buat ngadepin dunia yang kadang absurd, makin sabar ngadepin orang-orang, terutama anomali dan makin bahagia sama hal-hal kecil yang sering kamu lupain. Aku harap rezekimu lancar, langkahmu ringan, dan hatimu selalu hangat💫</p>
+                    </div>
+                    <div class="message-card fade-in">
+                        <p>Dan please ya, jangan lupa bahagia. Dunia emang gak selalu baik, tapi kamu bisa selalu jadi alasan buat baik-baikin diri sendiri. Kalau lagi capek, inget aja.... aku. sama aku juga cape jadi saling cape aja biar adil. bohong bercanda, kamu boleh curhat kok... nanti aku jawab “oh gitu 😅” tapi niatnya tulus kok 😜. 
+                            Jangan lupa traktirannya ya, kan katanya ulang tahun harus berbagi, jadi berbagi kebahagiaan lewat makanan juga gak dosa 😋🍰 atau bayarin nonton dah gpp</p>
+                    </div>
+                    <div class="message-card fade-in">
+                        <p>Pokoknya, semoga semua doa baik yang kamu ucapin pelan-pelan jadi nyata. Semoga kamu tetap jadi versi terbaik dari dirimu sendiri, yang lucu, ngeselin, tapi selalu bikin orang lain ngerasa nyaman. 
+                            Dan semoga di ulang tahun kali ini, kamu sadar satu hal penting... bahwa kamu itu berharga banget, buat semua orang yang beruntung kenal kamu. 💞</p>
+                    </div>
+                    <div class="message-card fade-in">
+                        <p>Selamat ulang tahun ya, semoga di umur baru ini semuanya jadi lebih indah, lebih hangat, dan lebih penuh tawa🎂✨</p>
+                    </div>
+                </div>
+
+                <!-- Secret message section -->
+                <div class="secret-message-section fade-in">
+                    <button class="secret-button" onclick="revealLove()">
+                        <i class="fas fa-envelope"></i>
+                        Pesan Rahasia — Jangan Diklik! Kamu nggak bakal ngerti juga 😜
+                    </button>
+                    <div id="secret" class="secret-content">
+                        <div class="secret-card">
+                            <i class="fas fa-heart"></i>
+                            <p>Sipasipaga sipagaga sipasipapa sipagaga sipopo~ 
+                                sipasipaga sipatiti sipagaga sipasipa~
+                                sipopo gapaga sipasipaga sipagaga sipa~
+                                hohoho~ sipasipaga sipagaga sipopo sipapa~
+                                hehehe~ sipasipaga sipagaga sipopo sipatata~
+                                gapaga sipasipaga sipopo~ sipa sipagaga sipagaga~
+                                sipasipapa sipagaga sipopo sipasipa~
+                                sipa sipa~ hohoho~ sipasipaga sipatiti~ sipopo gapaga~
+                                sipasipaga sipagaga sipopo sipasipapa~ sipopo sipapa~ ehehe~
+                                sipa sipagaga sipopo~ sipasipapa sipagaga sipopo sipopo~
+                                sipasipaga~ gapaga sipasipaga~ heeheehee~ sipa~!”</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Celebrity Greetings Section -->
+            <section class="greetings-section">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">
+                        <i class="fas fa-star"></i>
+                        Ucapan dari teman - temanku 
+                    </h2>
+                </div>
+                <div class="greetings-container">
+                    <div class="greeting-card fade-in">
+                        <div class="greeting-profile">
+                            <div class="profile-avatar">
+                                <img src="images/prabowo.jpg" alt="Prabowo Subianto">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Prabowo Subianto</h3>
+                                <p class="profile-title">Presiden RI</p>
+                            </div>
+                        </div>
+                        <div class="greeting-message">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Selamat ulang tahun Disaa! Semoga di usia yang baru ini, kamu makin kuat, makin bijak, dan terus berkontribusi untuk Indonesia. Ingat, kita harus merdeka dari segala hal, termasuk merdeka untuk bahagia!</p>
+                        </div>
+                    </div>
+
+                    <div class="greeting-card fade-in">
+                        <div class="greeting-profile">
+                            <div class="profile-avatar">
+                                <img src="images/raisa.webp" alt="Raisa Andriana">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Raisa Andriana</h3>
+                                <p class="profile-title">Penyanyi</p>
+                            </div>
+                        </div>
+                        <div class="greeting-message">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Happy birthday Disaa! 🎂 Semoga selalu bahagia dan terus menebar kebaikan. Tetap jadi diri sendiri dan jangan lupa untuk selalu tersenyum. Kamu luar biasa! 💕</p>
+                        </div>
+                    </div>
+
+                    <div class="greeting-card fade-in">
+                        <div class="greeting-profile">
+                            <div class="profile-avatar">
+                                <img src="images/ardhito.jpeg" alt="Ardhito Pramono">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Ardhito Pramono</h3>
+                                <p class="profile-title">Musisi</p>
+                            </div>
+                        </div>
+                        <div class="greeting-message">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Yo Disaa! Happy birthday! Semoga tahun ini penuh dengan melodi indah, harmoni kehidupan, dan rhythm yang pas. Keep groovin' and stay cool! 🎸✨</p>
+                        </div>
+                    </div>
+
+                    <div class="greeting-card fade-in">
+                        <div class="greeting-profile">
+                            <div class="profile-avatar">
+                                <img src="images/diansastrowardoyo.jpg" alt="Dian Sastrowardoyo">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Dian Sastrowardoyo</h3>
+                                <p class="profile-title">Aktris</p>
+                            </div>
+                        </div>
+                        <div class="greeting-message">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Selamat ulang tahun, Disaa! Semoga di tahun ini kamu menemukan lebih banyak alasan untuk tersenyum dan terus menginspirasi orang-orang di sekitarmu. You're amazing! 🌟</p>
+                        </div>
+                    </div>
+
+                    <div class="greeting-card fade-in">
+                        <div class="greeting-profile">
+                            <div class="profile-avatar">
+                                <img src="images/tontowiahmad.jpg" alt="Tontowi Ahmad">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Tontowi Ahmad</h3>
+                                <p class="profile-title">Atlet Bulu Tangkis</p>
+                            </div>
+                        </div>
+                        <div class="greeting-message">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Happy birthday Disaa! Semoga di umur baru ini kamu makin semangat mengejar impian, seperti mengejar kok di lapangan! Never give up dan selalu jadi pemenang dalam hidupmu! 🏸🏆</p>
+                        </div>
+                    </div>
+
+                    <div class="greeting-card fade-in">
+                        <div class="greeting-profile">
+                            <div class="profile-avatar">
+                                <img src="images/pandji.jpg" alt="Pandji Pragiwaksono">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Pandji Pragiwaksono</h3>
+                                <p class="profile-title">Komedian</p>
+                            </div>
+                        </div>
+                        <div class="greeting-message">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Yo Disaa! Happy leveling up! Umur bertambah itu kayak update software, kadang ada bug baru, tapi fitur-fiturnya makin keren. Enjoy your new version! 😄🎉</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="gallery-section">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">
+                        <i class="fas fa-images"></i>
+                        Koleksi Senyum Tengah Malam
+                    </h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item fade-in" onclick="openModal('images/1.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/1.jpg" alt="Studio Scene">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Poto studio gaya manyun</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/2.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/2.jpg" alt="Intimate Moment">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Poto studio gaya nyengir</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/3.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/3.jpg" alt="Cafe Scene">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Poto studio gaya pamer pipi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/4.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/4.jpg" alt="Selfie Moment">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>mukanya ngeselin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/5.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/5.jpg" alt="Dinner Scene">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>senyum malu malu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/6.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/6.jpg" alt="Portrait">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>gk tau mau gaya apah</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/7.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/7.jpg" alt="Relaxing Moment">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>gk bisa gaya</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/8.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/8.jpg" alt="Selfie">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>kaku banget</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/9.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/9.jpg" alt="Shopping">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>liatin aja terusss</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/10.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/10.jpg" alt="Casual Moment">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>ini pap</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/11.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/11.jpg" alt="Portrait">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>ini juga</p>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/12.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/12.jpg" alt="Outdoor Fun">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>ini ini</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/13.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/13.jpg" alt="Cozy Moment">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Terus terus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/14.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/14.jpg" alt="City Vibes">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Lagi lagi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/15.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/15.jpg" alt="Nature Walk">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Lagi lagi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/16.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/16.jpg" alt="Smiling Portrait">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Lagi lagi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/17.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/17.jpg" alt="Joyful Expression">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>Manyun</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openModal('images/18.jpg')">
+                        <div class="gallery-image-wrapper">
+                            <img src="images/18.jpg" alt="Thoughtful Moment">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-heart"></i>
+                                    <p>gk niat inimah</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-icon fade-in">
+                <i class="fas fa-heart"></i>
+            </div>
+            <p class="footer-text fade-in">dari @rdhgstwn<br>Semoga hari ulang tahunmu seindah dirimu</p>
+            <div class="social-icons fade-in">
+                <a href="#" class="social-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-star"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-gift"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for image viewing -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-nav">
+            <button class="modal-nav-btn prev-btn" onclick="changeImage(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="modal-nav-btn next-btn" onclick="changeImage(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Music player -->
+    <div class="music-player">
+        <div class="player-header">
+            <i class="fas fa-music"></i>
+            <span>Playlist Music 🎧</span>
+        </div>
+        <div class="player-controls">
+            <button id="prevBtn" onclick="previousTrack()">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button id="playPauseBtn" onclick="toggleMusic()">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="nextBtn" onclick="nextTrack()">
+                <i class="fas fa-step-forward"></i>
+            </button>
+        </div>
+        <div class="track-info">
+            <div class="track-name" id="trackName">Blue</div>
+            <div class="track-artist" id="trackArtist">Yung Kai</div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="volume-control">
+            <button onclick="toggleMute()" id="muteBtn">
+                <i class="fas fa-volume-up"></i>
+            </button>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50" onchange="changeVolume(this.value)">
+        </div>
+    </div>
+
+    <!-- Audio elements for playlist -->
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
